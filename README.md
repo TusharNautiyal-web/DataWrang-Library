@@ -1,8 +1,10 @@
+# IMPORTANT:
+please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
 
 Installation
 ```python
-import DataWrang
+import datawrang
 # There are many functions a detailed readme will be avalible soon.
 
 Find_Categorical_dtype_num(df)
