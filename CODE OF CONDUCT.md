@@ -14,7 +14,6 @@ Thank you for wanting to contribute to the datawrang project!
     * [Submitting a change](#submitting-a-change)
 * [License terms for contributions](#license-terms-for-contributions)
 * [Becoming a maintainer](#becoming-a-maintainer)
-* [Trademarks](#trademarks)
 
 ## Code of Conduct
 
