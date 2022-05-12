@@ -53,7 +53,15 @@ Capture_NaN(df,feature = '')
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Usage
+```python
+import datawrang as dw
+dw.Find_corr(dataframe,feature)
+# import datawrang and then you can use all the functions and classes avalible in the package.
+```
+For detailed classes and functions visit Documentation. (coming soon)
 
+## Code of Conduct
+Visit Code of counduct page to know about usage policies and code of conduct <a href = 'https://github.com/TusharNautiyal-web/DataWrang-Library/blob/main/CODE%20OF%20CONDUCT.md'>Click Here</a>.
 
 Please make sure to update tests as appropriate.
 
