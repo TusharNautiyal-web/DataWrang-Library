@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name = 'DataWrang',
-    version= '0.0.1',
+    version= '0.0.3',
     description = 'Python Library For Data Science',
     author = 'Tushar Nautiyal',
     long_description= 'Python Library For Data Science for data cleaning, preproecessing , feature enginnering and feature selection. It includes multiple functions to deal with multiple scenarios. ',
@@ -18,6 +18,6 @@ setup(
     license='MIT',
     classifiers=classifiers,
     keywords='Data',
-    packages=find_packages(),
-    install_requires = ['numpy','pandas','random','colorama']
+    packages=['datawrang'],
+    install_requires = ['numpy','pandas','colorama']
 )
