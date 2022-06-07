@@ -6,7 +6,7 @@ Data Wrang Library is created For Python for dealing with problems of feature en
 
 For Installation:
 ```
-!pip install DataWrang
+pip install DataWrang
 ```
 <a href = ''>Detailed DataWrang Documentation</a>
 
