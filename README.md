@@ -2,7 +2,14 @@
 please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
 
+# Getting Started Documentaiton
+
 Installation
+```
+pip install DataWrang
+```
+<a href = ''>Detailed DataWrang Documentation</a>
+
 ```python
 import datawrang
 # There are many functions a detailed readme will be avalible soon.
