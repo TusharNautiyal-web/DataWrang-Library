@@ -1,8 +1,18 @@
 # IMPORTANT:
-please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
-Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
+<img src = 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/>  <img src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img src = 'https://img.shields.io/badge/Latest-0.0.3-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
 
-Installation
+Please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
+Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
+<!-- Place this tag where you want the button to render. -->
+<!-- Place this tag in your head or just before your close body tag. -->
+# Getting Started Documentaiton
+
+For Installation:
+```
+pip install DataWrang
+```
+***For Detailed DataWrang <a href = 'https://tusharnautiyal-web.github.io/DataWrang-Library/'>Documentation</a>***
+
 ```python
 import datawrang
 # There are many functions a detailed readme will be avalible soon.
