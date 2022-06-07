@@ -1,8 +1,10 @@
+# IMPORTANT:
+please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
 
 Installation
 ```python
-import DataWrang
+import datawrang
 # There are many functions a detailed readme will be avalible soon.
 
 Find_Categorical_dtype_num(df)
@@ -51,7 +53,15 @@ Capture_NaN(df,feature = '')
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Usage
+```python
+import datawrang as dw
+dw.Find_corr(dataframe,feature)
+# import datawrang and then you can use all the functions and classes avalible in the package.
+```
+For detailed classes and functions visit Documentation. (coming soon)
 
+## Code of Conduct
+Visit Code of counduct page to know about usage policies and code of conduct <a href = 'https://github.com/TusharNautiyal-web/DataWrang-Library/blob/main/CODE%20OF%20CONDUCT.md'>Click Here</a>.
 
 Please make sure to update tests as appropriate.
 
