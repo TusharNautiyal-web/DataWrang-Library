@@ -1,7 +1,8 @@
 # IMPORTANT:
 please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
-
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/TusharNautiyal-web" aria-label="Follow @TusharNautiyal-web on GitHub">Follow @ntkme</a>
 # Getting Started Documentaiton
 
 For Installation:
