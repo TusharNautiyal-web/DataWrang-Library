@@ -3,8 +3,7 @@ please update your library to the latest version to use it properly v datawrang 
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
 <!-- Place this tag where you want the button to render. -->
 <!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<a class="github-button" href="https://github.com/TusharNautiyal-web" aria-label="Follow @TusharNautiyal-web on GitHub">Follow @Tusharnautiyal</a>
+<img src = 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/>
 # Getting Started Documentaiton
 
 For Installation:
