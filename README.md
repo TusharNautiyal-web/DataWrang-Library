@@ -1,9 +1,11 @@
+<img src = 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/>
+[![General badge](https://img.shields.io/badge/Version-Alpha-Green.svg)](https://shields.io/)
+
 # IMPORTANT:
-please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
+Please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
 <!-- Place this tag where you want the button to render. -->
 <!-- Place this tag in your head or just before your close body tag. -->
-<img src = 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/>
 # Getting Started Documentaiton
 
 For Installation:
