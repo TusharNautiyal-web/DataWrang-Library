@@ -6,6 +6,12 @@ from colorama import Fore
 pd.options.mode.chained_assignment = None  # default='warn'
 try:
     #finding Things and data research--------------->
+    def mean_target_encoding(dataframe, features, target):
+     pass
+    def frequency_encoding(args):
+     pass
+    def mean_target_encoding(args):
+     pass
     def Find_Categorical_col(df):
         # This will return all categorical vairables from data frame.
         # It should only be used for bigger datasets and should not be used for smaller datasets.

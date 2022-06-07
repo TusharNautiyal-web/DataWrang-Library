@@ -8,9 +8,8 @@ try:
     '''Finding Things and data research--------------->'''
     def Find_Categorical_col(df):
         ''' Input: pd.Dataframe()
-            Output: pd.DataFrame() # with Categroical Variables. 
-            Parameters: 
-            
+            Output: pd.DataFrame() with Categroical Variables. 
+            Parameters: pandas.DataFrame
             Description: This will return all categorical vairables from data frame.
             It should only be used for bigger datasets and should not be used for smaller datasets.'''
         col_names = []
@@ -64,9 +63,9 @@ try:
         return df2
     
     def Find_Categorical_dtype_num(df):
-        ''' This will return numerical dtype categorical vairables from data frame.
-            Input: pd.Dataframe()
+        ''' Input: pd.Dataframe()
             Output: pd.DataFrame() # with Categroical Variables.
+            Description: This will return numerical dtype categorical vairables from data frame.
             It should only be used for bigger datasets and should not be used for smaller datasets.''' 
         col_names = []
         dty_num = df.select_dtypes('number')
@@ -134,12 +133,11 @@ try:
         
         
     def Find_Missing_percentage(dataframe):
-        '''Find Out Only Missing Values in respect to Percentage.
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+        '''
+            Input: pd.DataFrame()
+            Output: features: -> Missing Value Percentage
+            Params: pd.DataFrame()
+            Description: Find Out Only Missing Values in respect to Percentage. It will return you all the percentage value of Null columns. 
         '''
         features = dataframe.columns
         index = np.where(dataframe.isnull().sum()>0)
@@ -165,13 +163,11 @@ try:
             
     def Find_corr_drop(dataframe,features,thresh):
             ''' 
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
-            This Will Delete all the correlation column------------------>
-            Its for +ve correlation finding --------------------->'''
+            Input: pd.DataFrame(), features, thresh
+            Output: updated pd.dataframe()
+            Params:pd.DataFrame(), feautres = pd.Series(), thresh = floating decimal values
+            Description: This Will check the correlation of features and will delete based on threshold.
+            '''
             result = {}
             final_result = []
             string = ''
@@ -196,13 +192,12 @@ try:
             else:
                 print(f'{Fore.RED}Please Check All The Parameters And Try Again.')
         
-    def Find_corr(dataframe,features,thresh = 12120,sign = ''):
+    def Find_corr(dataframe,features,thresh,sign):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), features, thresh, sign
+            Output: updated pd.dataframe()
+            Params:pd.DataFrame(), feautres = pd.Series(), thresh = floating decimal values , sign = '+ve', '-ve', or all = ''
+            Description: This Will check the correlation of features and will delete based on threshold.
             thresh = accepts percentage values in decimal
             sign = accpets +ve , -ve string values.
             dataframe = pandas dataframe pd.DataFrame()
@@ -329,13 +324,12 @@ try:
         '''
         def percentage(self,dataframe,perc):  
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
+            Input: pd.DataFrame(), perc = float
+            Output: pd.DataFrame()
+            Params: pd.DataFrame(), perc = percentage => float
             Description:
             This will remove all null values columns for certain defined percentage.   
-            percentage are addend in decimal format.'''
+            percentage are given in decimal format for eg 0.2 => 20%.'''
             self.dataframe = dataframe
             self.perc_value = perc
             
@@ -355,10 +349,9 @@ try:
        
         def auto_perc(self,dataframe):    
             ''' 
-            Input:
-            Output:
-            Params:
-            Prerequisite:
+            Input: pd.DataFrame()
+            Output: pd.DataFrame()
+            Params: pd.DataFrame()
             Description:
             This will remove all null value columns from dataframe which have more then 30 percent null values. '''            
             self.dataframe = dataframe
@@ -376,12 +369,12 @@ try:
     
         def dtype_perc(self,dataframe,perc,dtype):    
             ''' 
-            Input:
-            Output:
-            Params:
-            Prerequisite:
+            Input: pd.DataFrame(), perc = float, dtype = string => float,int..
+            Output: pd.DataFrame()
+            Params: pd.DataFrame(), perc = percentage => float, dtype = 'float', 'object', 'int'
             Description:
-            This will remove all null values columns for certain defined datatypes with certain percentage only. '''          
+            This will remove all null values columns for certain defined percentage and dtype.   
+            percentage are given in decimal format for eg 0.2 => 20% defined dtype should be an actual data type value. '''          
             self.dataframe = dataframe
             self.perc = perc
             self.dtype = dtype
@@ -401,10 +394,9 @@ try:
        
         def only_dtype(self,dataframe,dtype):    
             ''' 
-            Input:
-            Output:
-            Params:
-            Prerequisite:
+            Input: pd.DataFrame(), dtype = float
+            Output: pd.DataFrame()
+            Params: pd.DataFrame(), dtype = DataType  => float,int,object
             Description:
             This will remove all null values columns for certain defined datatypes only.'''            
             self.dataframe = dataframe
@@ -423,11 +415,11 @@ try:
     class Impute:
         def remove_outliers(self,dataframe,features):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), features = pd.Series() => List, String
+            Output: pd.DataFrame()
+            Params:  pd.DataFrame(), features = pd.Series() that we need to remove outliers from
+            Description: It will remove all outliers from the dataframe and will give you result features can be a list or string do remember you will be losing data if you do this step  .
+            
             '''
             self.dataframe = dataframe
             self.features = features
@@ -456,12 +448,10 @@ try:
 
         def replace_outliers(self,dataframe,features, kind = 'median', custom = ''):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
-            This will replace outliers from specified kind values.--------->
+            Input: pd.DataFrame(), features = pd.Series() => List, String, kind = ['median' (default), mode, mean] , custom = 'Your custom Values'
+            Output: pd.DataFrame()
+            Params:  pd.DataFrame(), features = pd.Series() that we need to replace outliers from,  kind = ['median' (default), mode, mean] => you can change method using kind , custom = 'Your custom Values'
+            Description: This will replace outliers from specified kind values this is best if you don't want to lose data but will impact the relationship of your data also you can specifiy your own custom values for the outliers.
             '''
             self.dataframe = dataframe
             self.features = features
@@ -539,11 +529,9 @@ try:
     
         def frequent_category(self,dataframe,feature):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() => List, String
+            Output: pd.DataFrame()
+            Description: This will impute all features null values with frequent category technique or frequency counts.
             '''
             self.dataframe = dataframe
             self.feature = feature
@@ -562,14 +550,12 @@ try:
             
         def endofdist(self,dataframe,feature,newcol = False):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() =>list, String, newcol = bool
+            Output: pd.DataFrame()
+            Description:If there is a suspicion that the missing value is not at random then capturing that information is important.
+            In this scenario, one would want to replace missing data with values that are at the tail of the distribution of the variable.
+            This will impute all features null values with end of distribution technique with newcol = True you can create new column with replaced null values.
             '''
-            ''' If there is a suspicion that the missing value is not at random then capturing that information is important. 
-             In this scenario, one would want to replace missing data with values that are at the tail of the distribution of the variable.'''
             self.dataframe = dataframe
             self.feature = feature
             self.newcol = newcol
@@ -601,13 +587,10 @@ try:
        
         def rand_sample(self,dataframe,feature = ""):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() => list, string
+            Output: pd.DataFrame()
+            Description: This will convert null values in a feature columns specified by using list or string into randomly selected values only applicable for numerical features.
             '''
-            '''This will convert null values into randomly selected values.'''
             self.feature = feature
             self.dataframe = dataframe
             columns = dataframe.columns.tolist()
@@ -645,11 +628,9 @@ try:
          
         def rand_sample_cat(self,dataframe,feature):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() => list, string
+            Output: pd.DataFrame()
+            Description: This will convert null values in a feature columns specified by using list or string into randomly selected values only applicable for categorical features.
             '''
             self.feature = feature
             self.dataframe = dataframe
@@ -671,13 +652,11 @@ try:
                 
         def nan_mean(self,dataframe,feature):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() => list, string
+            Output: pd.DataFrame()
+            Description: Convert nan values to feature mean values.
             '''
-            '''Convert nan values to mean values.'''
+            ''''''
             string = ''
             listdata = [] 
             self.dataframe = dataframe
@@ -702,11 +681,9 @@ try:
         # '''single null value replace
         def nan_median(self,dataframe,feature):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() => list, string
+            Output: pd.DataFrame()
+            Description: Convert all nan values to median of feature values.
             '''
             feature  = list(feature)
             self.dataframe = dataframe
@@ -718,11 +695,9 @@ try:
             
         def nan_mode(self,dataframe,feature):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), feature = pd.Series() => list, string
+            Output: pd.DataFrame()
+            Description: Convert all nan values to mode of feature values
             '''
             feature = feature
             self.dataframe = dataframe
@@ -734,11 +709,10 @@ try:
     
         def nan_mean_all(self,dataframe,force = 'no'):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame(), force = 'no','yes'
+            Output: pd.DataFrame()
+            Params: force => if specified yes then will replace mean values of categorical also which is median of categorical based on the frequency.
+            Description: Will replace all nan values in datafarme with mean and force if specified yes then will replace mean values of categorical also which is median of categorical based on the frequency.
             '''
             self.dataframe = dataframe
             self.force = force
@@ -761,11 +735,9 @@ try:
         
         def nan_median_all(self,dataframe):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame()
+            Output: pd.DataFrame()
+            Description: Will replace all nan values in datafarme with median .
             '''
             self.dataframe = dataframe
             '''It will replace all nan value columns with median.'''
@@ -782,11 +754,9 @@ try:
         
         def nan_mode_all(self,dataframe):
             '''
-            Input:
-            Output:
-            Params:
-            Prerequisite:
-            Description:
+            Input: pd.DataFrame()
+            Output: pd.DataFrame()
+            Description: Will replace all nan values in datafarme with mode .
             '''
             self.dataframe = dataframe
             columns = dataframe.columns.tolist()

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://localhost:60196/Datawrang.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pydoc: module Datawrang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="./Pydoc_ module Datawrang_files/_pydoc.css"></head><body bgcolor="#f0f0f8">
+  <script src="https://kit.fontawesome.com/ff314a1ab8.js" crossorigin="anonymous"></script>
+            
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tbody><tr bgcolor="white">
+<td valign="bottom">&nbsp;<br>
+<font  face="helvetica, arial">&nbsp;<br><big><big><strong><h1 style="text-align: center; color: black;"><i class="fa-brands fa-python"></i>DataWrang 0.0.3</h1></strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"></font></td></tr></tbody></table>
+    <p></p>
+    <div style="text-align: center;">
+      <p><a href="https://pypi.org/project/DataWrang/" style="color: black">pip install DataWrang</a></p>
+    </div>
+    <div style="text-align: center;">
+      <p>Created By Tushar Nautiyal 2022 | Latest Version = 0.0.3 - alpha | Upcoming Latest Version = 0.0.4 Update on 28 July 2022</p>
+    </div>
+
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+
+ <p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Dropnan">class <strong>Dropnan</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt>Drop&nbsp;Null&nbsp;Columns&nbsp;Using&nbsp;Properties.<br>
+Initalized&nbsp;as&nbsp;<br>
+import&nbsp;datawrang&nbsp;as&nbsp;dw<br>
+dropnan&nbsp;=&nbsp;dw.Dropnan()<br>
+dropnan.percentage(df,0.3)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Dropnan-auto_perc"><strong>auto_perc</strong></a>(self, dataframe)</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;pd.DataFrame()<br>
+Description:<br>
+This&nbsp;will&nbsp;remove&nbsp;all&nbsp;null&nbsp;value&nbsp;columns&nbsp;from&nbsp;dataframe&nbsp;which&nbsp;have&nbsp;more&nbsp;then&nbsp;30&nbsp;percent&nbsp;null&nbsp;values.</tt></dd></dl>
+
+<dl><dt><a name="Dropnan-dtype_perc"><strong>dtype_perc</strong></a>(self, dataframe, perc, dtype)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;perc&nbsp;=&nbsp;float,&nbsp;dtype&nbsp;=&nbsp;string&nbsp;=&gt;&nbsp;float,int..<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;pd.DataFrame(),&nbsp;perc&nbsp;=&nbsp;percentage&nbsp;=&gt;&nbsp;float,&nbsp;dtype&nbsp;=&nbsp;'float',&nbsp;'object',&nbsp;'int'<br>
+Description:<br>
+This&nbsp;will&nbsp;remove&nbsp;all&nbsp;null&nbsp;values&nbsp;columns&nbsp;for&nbsp;certain&nbsp;defined&nbsp;percentage&nbsp;and&nbsp;dtype.&nbsp;&nbsp;&nbsp;<br>
+percentage&nbsp;are&nbsp;given&nbsp;in&nbsp;decimal&nbsp;format&nbsp;for&nbsp;eg&nbsp;0.2&nbsp;=&gt;&nbsp;20%&nbsp;defined&nbsp;dtype&nbsp;should&nbsp;be&nbsp;an&nbsp;actual&nbsp;data&nbsp;type&nbsp;value.</tt></dd></dl>
+
+<dl><dt><a name="Dropnan-only_dtype"><strong>only_dtype</strong></a>(self, dataframe, dtype)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;dtype&nbsp;=&nbsp;float<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;pd.DataFrame(),&nbsp;dtype&nbsp;=&nbsp;DataType&nbsp;&nbsp;=&gt;&nbsp;float,int,object<br>
+Description:<br>
+This&nbsp;will&nbsp;remove&nbsp;all&nbsp;null&nbsp;values&nbsp;columns&nbsp;for&nbsp;certain&nbsp;defined&nbsp;datatypes&nbsp;only.</tt></dd></dl>
+
+<dl><dt><a name="Dropnan-percentage"><strong>percentage</strong></a>(self, dataframe, perc)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;perc&nbsp;=&nbsp;float<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;pd.DataFrame(),&nbsp;perc&nbsp;=&nbsp;percentage&nbsp;=&gt;&nbsp;float<br>
+Description:<br>
+This&nbsp;will&nbsp;remove&nbsp;all&nbsp;null&nbsp;values&nbsp;columns&nbsp;for&nbsp;certain&nbsp;defined&nbsp;percentage.&nbsp;&nbsp;&nbsp;<br>
+percentage&nbsp;are&nbsp;given&nbsp;in&nbsp;decimal&nbsp;format&nbsp;for&nbsp;eg&nbsp;0.2&nbsp;=&gt;&nbsp;20%.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Impute">class <strong>Impute</strong></a>(builtins.object)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Impute-endofdist"><strong>endofdist</strong></a>(self, dataframe, feature, newcol=False)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;list,&nbsp;String,&nbsp;newcol&nbsp;=&nbsp;bool<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:If&nbsp;there&nbsp;is&nbsp;a&nbsp;suspicion&nbsp;that&nbsp;the&nbsp;missing&nbsp;value&nbsp;is&nbsp;not&nbsp;at&nbsp;random&nbsp;then&nbsp;capturing&nbsp;that&nbsp;information&nbsp;is&nbsp;important.<br>
+In&nbsp;this&nbsp;scenario,&nbsp;one&nbsp;would&nbsp;want&nbsp;to&nbsp;replace&nbsp;missing&nbsp;data&nbsp;with&nbsp;values&nbsp;that&nbsp;are&nbsp;at&nbsp;the&nbsp;tail&nbsp;of&nbsp;the&nbsp;distribution&nbsp;of&nbsp;the&nbsp;variable.<br>
+This&nbsp;will&nbsp;impute&nbsp;all&nbsp;features&nbsp;null&nbsp;values&nbsp;with&nbsp;end&nbsp;of&nbsp;distribution&nbsp;technique&nbsp;with&nbsp;newcol&nbsp;=&nbsp;True&nbsp;you&nbsp;can&nbsp;create&nbsp;new&nbsp;column&nbsp;with&nbsp;replaced&nbsp;null&nbsp;values.</tt></dd></dl>
+
+<dl><dt><a name="Impute-frequent_category"><strong>frequent_category</strong></a>(self, dataframe, feature)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;List,&nbsp;String<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;This&nbsp;will&nbsp;impute&nbsp;all&nbsp;features&nbsp;null&nbsp;values&nbsp;with&nbsp;frequent&nbsp;category&nbsp;technique&nbsp;or&nbsp;frequency&nbsp;counts.</tt></dd></dl>
+
+<dl><dt><a name="Impute-nan_mean"><strong>nan_mean</strong></a>(self, dataframe, feature)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;list,&nbsp;string<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;Convert&nbsp;nan&nbsp;values&nbsp;to&nbsp;feature&nbsp;mean&nbsp;values.</tt></dd></dl>
+
+<dl><dt><a name="Impute-nan_mean_all"><strong>nan_mean_all</strong></a>(self, dataframe, force='no')</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;force&nbsp;=&nbsp;'no','yes'<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;force&nbsp;=&gt;&nbsp;if&nbsp;specified&nbsp;yes&nbsp;then&nbsp;will&nbsp;replace&nbsp;mean&nbsp;values&nbsp;of&nbsp;categorical&nbsp;also&nbsp;which&nbsp;is&nbsp;median&nbsp;of&nbsp;categorical&nbsp;based&nbsp;on&nbsp;the&nbsp;frequency.<br>
+Description:&nbsp;Will&nbsp;replace&nbsp;all&nbsp;nan&nbsp;values&nbsp;in&nbsp;datafarme&nbsp;with&nbsp;mean&nbsp;and&nbsp;force&nbsp;if&nbsp;specified&nbsp;yes&nbsp;then&nbsp;will&nbsp;replace&nbsp;mean&nbsp;values&nbsp;of&nbsp;categorical&nbsp;also&nbsp;which&nbsp;is&nbsp;median&nbsp;of&nbsp;categorical&nbsp;based&nbsp;on&nbsp;the&nbsp;frequency.</tt></dd></dl>
+
+<dl><dt><a name="Impute-nan_median"><strong>nan_median</strong></a>(self, dataframe, feature)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;list,&nbsp;string<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;Convert&nbsp;all&nbsp;nan&nbsp;values&nbsp;to&nbsp;median&nbsp;of&nbsp;feature&nbsp;values.</tt></dd></dl>
+
+<dl><dt><a name="Impute-nan_median_all"><strong>nan_median_all</strong></a>(self, dataframe)</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;Will&nbsp;replace&nbsp;all&nbsp;nan&nbsp;values&nbsp;in&nbsp;datafarme&nbsp;with&nbsp;median&nbsp;.</tt></dd></dl>
+
+<dl><dt><a name="Impute-nan_mode"><strong>nan_mode</strong></a>(self, dataframe, feature)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;list,&nbsp;string<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;Convert&nbsp;all&nbsp;nan&nbsp;values&nbsp;to&nbsp;mode&nbsp;of&nbsp;feature&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="Impute-nan_mode_all"><strong>nan_mode_all</strong></a>(self, dataframe)</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;Will&nbsp;replace&nbsp;all&nbsp;nan&nbsp;values&nbsp;in&nbsp;datafarme&nbsp;with&nbsp;mode&nbsp;.</tt></dd></dl>
+
+<dl><dt><a name="Impute-rand_sample"><strong>rand_sample</strong></a>(self, dataframe, feature='')</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;list,&nbsp;string<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;This&nbsp;will&nbsp;convert&nbsp;null&nbsp;values&nbsp;in&nbsp;a&nbsp;feature&nbsp;columns&nbsp;specified&nbsp;by&nbsp;using&nbsp;list&nbsp;or&nbsp;string&nbsp;into&nbsp;randomly&nbsp;selected&nbsp;values&nbsp;only&nbsp;applicable&nbsp;for&nbsp;numerical&nbsp;features.</tt></dd></dl>
+
+<dl><dt><a name="Impute-rand_sample_cat"><strong>rand_sample_cat</strong></a>(self, dataframe, feature)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;feature&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;list,&nbsp;string<br>
+Output:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;This&nbsp;will&nbsp;convert&nbsp;null&nbsp;values&nbsp;in&nbsp;a&nbsp;feature&nbsp;columns&nbsp;specified&nbsp;by&nbsp;using&nbsp;list&nbsp;or&nbsp;string&nbsp;into&nbsp;randomly&nbsp;selected&nbsp;values&nbsp;only&nbsp;applicable&nbsp;for&nbsp;categorical&nbsp;features.</tt></dd></dl>
+
+<dl><dt><a name="Impute-remove_outliers"><strong>remove_outliers</strong></a>(self, dataframe, features)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;features&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;List,&nbsp;String<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;&nbsp;pd.DataFrame(),&nbsp;features&nbsp;=&nbsp;pd.Series()&nbsp;that&nbsp;we&nbsp;need&nbsp;to&nbsp;remove&nbsp;outliers&nbsp;from<br>
+Description:&nbsp;It&nbsp;will&nbsp;remove&nbsp;all&nbsp;outliers&nbsp;from&nbsp;the&nbsp;dataframe&nbsp;and&nbsp;will&nbsp;give&nbsp;you&nbsp;result&nbsp;features&nbsp;can&nbsp;be&nbsp;a&nbsp;list&nbsp;or&nbsp;string&nbsp;do&nbsp;remember&nbsp;you&nbsp;will&nbsp;be&nbsp;losing&nbsp;data&nbsp;if&nbsp;you&nbsp;do&nbsp;this&nbsp;step&nbsp;&nbsp;.</tt></dd></dl>
+
+<dl><dt><a name="Impute-replace_outliers"><strong>replace_outliers</strong></a>(self, dataframe, features, kind='median', custom='')</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;features&nbsp;=&nbsp;pd.Series()&nbsp;=&gt;&nbsp;List,&nbsp;String,&nbsp;kind&nbsp;=&nbsp;['median'&nbsp;(default),&nbsp;mode,&nbsp;mean]&nbsp;,&nbsp;custom&nbsp;=&nbsp;'Your&nbsp;custom&nbsp;Values'<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;&nbsp;pd.DataFrame(),&nbsp;features&nbsp;=&nbsp;pd.Series()&nbsp;that&nbsp;we&nbsp;need&nbsp;to&nbsp;replace&nbsp;outliers&nbsp;from,&nbsp;&nbsp;kind&nbsp;=&nbsp;['median'&nbsp;(default),&nbsp;mode,&nbsp;mean]&nbsp;=&gt;&nbsp;you&nbsp;can&nbsp;change&nbsp;method&nbsp;using&nbsp;kind&nbsp;,&nbsp;custom&nbsp;=&nbsp;'Your&nbsp;custom&nbsp;Values'<br>
+Description:&nbsp;This&nbsp;will&nbsp;replace&nbsp;outliers&nbsp;from&nbsp;specified&nbsp;kind&nbsp;values&nbsp;this&nbsp;is&nbsp;best&nbsp;if&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;lose&nbsp;data&nbsp;but&nbsp;will&nbsp;impact&nbsp;the&nbsp;relationship&nbsp;of&nbsp;your&nbsp;data&nbsp;also&nbsp;you&nbsp;can&nbsp;specifiy&nbsp;your&nbsp;own&nbsp;custom&nbsp;values&nbsp;for&nbsp;the&nbsp;outliers.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table></p></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#eeaa77">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-Capture_NaN"><strong>Capture_NaN</strong></a>(dataframe, feature='')</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;dataframe&nbsp;=&nbsp;,feature&nbsp;=&nbsp;<br>
+Prerequisite:&nbsp;dataframe&nbsp;parameter&nbsp;cannot&nbsp;stay&nbsp;empty.<br>
+Description:&nbsp;Capture_NaN&nbsp;will&nbsp;perform&nbsp;Capturing&nbsp;of&nbsp;null&nbsp;values&nbsp;and&nbsp;will&nbsp;store&nbsp;it&nbsp;in&nbsp;a&nbsp;new&nbsp;feature&nbsp;naming&nbsp;:&nbsp;['your_feature_name'&nbsp;+&nbsp;_Capture]</tt></dd></dl>
+ <dl><dt><a name="-Find_Categorical_col"><strong>Find_Categorical_col</strong></a>(df)</dt><dd><tt>Input:&nbsp;pd.Dataframe()<br>
+Output:&nbsp;pd.DataFrame()&nbsp;with&nbsp;Categroical&nbsp;Variables.&nbsp;<br>
+Parameters:&nbsp;pandas.DataFrame<br>
+Description:&nbsp;This&nbsp;will&nbsp;return&nbsp;all&nbsp;categorical&nbsp;vairables&nbsp;from&nbsp;data&nbsp;frame.<br>
+It&nbsp;should&nbsp;only&nbsp;be&nbsp;used&nbsp;for&nbsp;bigger&nbsp;datasets&nbsp;and&nbsp;should&nbsp;not&nbsp;be&nbsp;used&nbsp;for&nbsp;smaller&nbsp;datasets.</tt></dd></dl>
+ <dl><dt><a name="-Find_Categorical_dtype_num"><strong>Find_Categorical_dtype_num</strong></a>(df)</dt><dd><tt>Input:&nbsp;pd.Dataframe()<br>
+Output:&nbsp;pd.DataFrame()&nbsp;#&nbsp;with&nbsp;Categroical&nbsp;Variables.<br>
+Description:&nbsp;This&nbsp;will&nbsp;return&nbsp;numerical&nbsp;dtype&nbsp;categorical&nbsp;vairables&nbsp;from&nbsp;data&nbsp;frame.<br>
+It&nbsp;should&nbsp;only&nbsp;be&nbsp;used&nbsp;for&nbsp;bigger&nbsp;datasets&nbsp;and&nbsp;should&nbsp;not&nbsp;be&nbsp;used&nbsp;for&nbsp;smaller&nbsp;datasets.</tt></dd></dl>
+ <dl><dt><a name="-Find_Categorical_dtype_obj"><strong>Find_Categorical_dtype_obj</strong></a>(df, force='no')</dt><dd><tt>Input:&nbsp;df&nbsp;=&nbsp;pd.DataFrame(),&nbsp;force&nbsp;=&nbsp;String&nbsp;<br>
+Output:&nbsp;pd.DataFrame()<br>
+Params:&nbsp;force:&nbsp;yes&nbsp;or&nbsp;no<br>
+Description:&nbsp;if&nbsp;force&nbsp;=&nbsp;yes&nbsp;it&nbsp;will&nbsp;only&nbsp;give&nbsp;you&nbsp;object&nbsp;values.&nbsp;if&nbsp;no&nbsp;then&nbsp;it&nbsp;will&nbsp;return&nbsp;only&nbsp;categorical&nbsp;data&nbsp;not&nbsp;all&nbsp;object&nbsp;data&nbsp;for&nbsp;example&nbsp;if&nbsp;you&nbsp;have&nbsp;a&nbsp;id&nbsp;as&nbsp;an&nbsp;object&nbsp;type&nbsp;id&nbsp;is&nbsp;unique&nbsp;for&nbsp;each&nbsp;row&nbsp;hence&nbsp;its&nbsp;not&nbsp;a&nbsp;categorical&nbsp;data&nbsp;type&nbsp;or&nbsp;have&nbsp;any&nbsp;category&nbsp;it&nbsp;will&nbsp;not&nbsp;include&nbsp;those&nbsp;data&nbsp;set&nbsp;if&nbsp;force&nbsp;=&nbsp;no.<br>
+This&nbsp;will&nbsp;return&nbsp;text&nbsp;or&nbsp;object&nbsp;categorical&nbsp;vairables&nbsp;from&nbsp;data&nbsp;frame.<br>
+It&nbsp;should&nbsp;only&nbsp;be&nbsp;used&nbsp;for&nbsp;bigger&nbsp;datasets&nbsp;and&nbsp;should&nbsp;not&nbsp;be&nbsp;used&nbsp;for&nbsp;smaller&nbsp;datasets.</tt></dd></dl>
+ <dl><dt><a name="-Find_Categorical_return_df"><strong>Find_Categorical_return_df</strong></a>(df)</dt><dd><tt>Input:&nbsp;pd.Dataframe()<br>
+Output:&nbsp;pd.DataFrame()&nbsp;#&nbsp;with&nbsp;Categroical&nbsp;Variables.<br>
+This&nbsp;will&nbsp;return&nbsp;all&nbsp;categorical&nbsp;vairables&nbsp;and&nbsp;converts&nbsp;into&nbsp;data&nbsp;frame.<br>
+It&nbsp;should&nbsp;only&nbsp;be&nbsp;used&nbsp;for&nbsp;bigger&nbsp;datasets&nbsp;and&nbsp;should&nbsp;not&nbsp;be&nbsp;used&nbsp;for&nbsp;smaller&nbsp;datasets.</tt></dd></dl>
+ <dl><dt><a name="-Find_Missing_col"><strong>Find_Missing_col</strong></a>(dataframe)</dt><dd><tt>Lets&nbsp;Find&nbsp;Out&nbsp;Only&nbsp;Missing&nbsp;Values&nbsp;in&nbsp;respect&nbsp;to&nbsp;Percentage.<br>
+Input:<br>
+Output:<br>
+Params:<br>
+Prerequisite:<br>
+Description:</tt></dd></dl>
+ <dl><dt><a name="-Find_Missing_percentage"><strong>Find_Missing_percentage</strong></a>(dataframe)</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
+Output:&nbsp;features:&nbsp;-&gt;&nbsp;Missing&nbsp;Value&nbsp;Percentage<br>
+Params:&nbsp;pd.DataFrame()<br>
+Description:&nbsp;Find&nbsp;Out&nbsp;Only&nbsp;Missing&nbsp;Values&nbsp;in&nbsp;respect&nbsp;to&nbsp;Percentage.&nbsp;It&nbsp;will&nbsp;return&nbsp;you&nbsp;all&nbsp;the&nbsp;percentage&nbsp;value&nbsp;of&nbsp;Null&nbsp;columns.</tt></dd></dl>
+ <dl><dt><a name="-Find_corr"><strong>Find_corr</strong></a>(dataframe, features, thresh, sign)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;features,&nbsp;thresh,&nbsp;sign<br>
+Output:&nbsp;updated&nbsp;pd.dataframe()<br>
+Params:pd.DataFrame(),&nbsp;feautres&nbsp;=&nbsp;pd.Series(),&nbsp;thresh&nbsp;=&nbsp;floating&nbsp;decimal&nbsp;values&nbsp;,&nbsp;sign&nbsp;=&nbsp;'+ve',&nbsp;'-ve',&nbsp;or&nbsp;all&nbsp;=&nbsp;''<br>
+Description:&nbsp;This&nbsp;Will&nbsp;check&nbsp;the&nbsp;correlation&nbsp;of&nbsp;features&nbsp;and&nbsp;will&nbsp;delete&nbsp;based&nbsp;on&nbsp;threshold.<br>
+thresh&nbsp;=&nbsp;accepts&nbsp;percentage&nbsp;values&nbsp;in&nbsp;decimal<br>
+sign&nbsp;=&nbsp;accpets&nbsp;+ve&nbsp;,&nbsp;-ve&nbsp;string&nbsp;values.<br>
+dataframe&nbsp;=&nbsp;pandas&nbsp;dataframe&nbsp;pd.DataFrame()<br>
+This&nbsp;will&nbsp;return&nbsp;all&nbsp;columns&nbsp;for&nbsp;certain&nbsp;defined&nbsp;+ve&nbsp;or&nbsp;-ve&nbsp;cor-relation.</tt></dd></dl>
+ <dl><dt><a name="-Find_corr_drop"><strong>Find_corr_drop</strong></a>(dataframe, features, thresh)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;features,&nbsp;thresh<br>
+Output:&nbsp;updated&nbsp;pd.dataframe()<br>
+Params:pd.DataFrame(),&nbsp;feautres&nbsp;=&nbsp;pd.Series(),&nbsp;thresh&nbsp;=&nbsp;floating&nbsp;decimal&nbsp;values<br>
+Description:&nbsp;This&nbsp;Will&nbsp;check&nbsp;the&nbsp;correlation&nbsp;of&nbsp;features&nbsp;and&nbsp;will&nbsp;delete&nbsp;based&nbsp;on&nbsp;threshold.</tt></dd></dl>
+</td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+</body></html>
