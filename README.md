@@ -12,7 +12,7 @@ For Installation:
 pip install DataWrang
 ```
 ***For Detailed DataWrang <a href = 'https://tusharnautiyal-web.github.io/DataWrang-Library/'>Documentation</a>***
-
+***python.org link<a href = 'https://pypi.org/project/DataWrang/'/>DataWrang - PyPI</a>
 ```python
 import datawrang
 # There are many functions a detailed readme will be avalible soon.
