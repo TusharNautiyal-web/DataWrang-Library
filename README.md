@@ -8,7 +8,7 @@ For Installation:
 ```
 pip install DataWrang
 ```
-***For Detailed DataWrang <a href = ''>Documentation</a>***
+***For Detailed DataWrang <a href = 'https://tusharnautiyal-web.github.io/DataWrang-Library/'>Documentation</a>***
 
 ```python
 import datawrang
