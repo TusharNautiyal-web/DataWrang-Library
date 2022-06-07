@@ -1,5 +1,5 @@
 <img src = 'https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/>
-[![General badge](https://img.shields.io/badge/Version-Alpha-Green.svg)](https://shields.io/)
+<img src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/>
 
 # IMPORTANT:
 Please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
