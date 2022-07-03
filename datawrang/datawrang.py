@@ -7,11 +7,8 @@ pd.options.mode.chained_assignment = None  # default='warn'
 try:
     #finding Things and data research--------------->
     def mean_target_encoding(dataframe, features, target):
-     pass
-    def frequency_encoding(args):
-     pass
-    def mean_target_encoding(args):
-     pass
+        pass
+    
     def Find_Categorical_col(df):
         # This will return all categorical vairables from data frame.
         # It should only be used for bigger datasets and should not be used for smaller datasets.
@@ -134,17 +131,16 @@ try:
         for i in index: 
             print(f'{features[i]}')
             
-    def Find_corr_drop(dataframe,features,thresh):
-          # This Will Delete all the correlation column------------------>
+    def Find_corr_drop(dataframe,feature,thresh):
+          # This Will Delete all the correlation column based on the feature column------------------>
             result = {}
             final_result = []
             string = ''
-            listdata = [] 
-            newdf = {}
+            
             # Its for +ve correlation finding --------------------->
            
-            if type(features) == type(string):
-                result = dict(dataframe.corr()[features])
+            if type(feature) == type(string):
+                result = dict(dataframe.corr()[feature])
                 index = result.keys()
                 final_result = {}
                 for i in index:
@@ -154,9 +150,37 @@ try:
                     fr = dict(pd.Series(final_result))
                     empty = set()
                     for keyss in fr:
-                        if(fr[keyss]>thresh and keyss!=features):
+                        if(fr[keyss]>thresh and keyss!=feature):
                             empty.add(keyss)
                 dataframe.drop(empty, axis = 1, inplace = True)
+                return dataframe
+                
+            else:
+                print(f'{Fore.RED}Please Check All The Parameters And Try Again.')
+                
+    def Find_corr_drop_all(dataframe,thresh,feature = ''):
+          # This Will Delete all the correlation column------------------>
+            # Its for +ve correlation finding --------------------->
+
+            if feature!='':
+                temp_df = dataframe[feature]
+                corr_matrix = dataframe.corr().abs()
+                # Select upper triangle of correlation matrix
+                upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
+                # Find features with correlation greater than 0.95
+                to_drop = [column for column in upper.columns if any(upper[column] > thresh)]
+                # Drop features 
+                dataframe.drop(to_drop, axis=1, inplace=True)
+                dataframe[feature] = temp_df
+                return dataframe
+            elif feature=="":
+                corr_matrix = dataframe.corr().abs()
+                # Select upper triangle of correlation matrix
+                upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
+                # Find features with correlation greater than 0.95
+                to_drop = [column for column in upper.columns if any(upper[column] > thresh)]
+                # Drop features 
+                dataframe.drop(to_drop, axis=1, inplace=True)
                 return dataframe
                 
             else:
@@ -646,7 +670,34 @@ try:
                 mode = dataframe[columns[i]].mode().tolist()[0] #if for some reason there comes two different values in mode
                 dataframe[columns[i]] = dataframe[columns[i]].fillna(mode)        
             return dataframe
-        
+    class Encoder:
+         def mean_target(self,dataframe,feature,target, on_new_col = 'no'):
+            _groups = pd.DataFrame() 
+            self.dataframe = dataframe
+            self.feature = feature
+            self.target = target
+            self.on_new_col = on_new_col
+            self._groups = _groups
+            string = ''
+            error = 'Please Check your parameters again or check documentation if you are not clear about the use.'
+            
+            if on_new_col == 'yes' and type(feature) == type(string):
+                mean_ordinal = dataframe.groupby([feature])[target].mean().to_dict()
+                _groups[feature] = dataframe[feature]
+                dataframe['Mean_Ordinal_Encode'] = dataframe[feature].map(mean_ordinal)
+                _groups['Encoded Values']  = dataframe['Mean_Ordinal_Encode']
+                dataframe[feature] = dataframe['Mean_Ordinal_Encode']
+                
+                return dataframe
+            elif on_new_col == 'no' and type(feature) == type(string):
+                _groups[feature] = dataframe[feature]
+                mean_ordinal = dataframe.groupby([feature])[target].mean().to_dict()
+                _groups[feature] = df[feature].map(mean_ordinal)
+                dataframe[feature] = _groups[feature]
+                return dataframe
+            else:
+                return error
+            
         
 except Exception as e:
        print(e)

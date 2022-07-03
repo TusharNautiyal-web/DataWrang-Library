@@ -60,6 +60,8 @@ Capture_NaN(df,feature = '')
 #.
 # A full documentation will be coming soon. Thank you.
 ```
+## Updates 
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Usage
