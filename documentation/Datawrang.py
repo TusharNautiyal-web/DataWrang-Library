@@ -166,7 +166,7 @@ try:
             Input: pd.DataFrame(), features, thresh
             Output: updated pd.dataframe()
             Params:pd.DataFrame(), feautres = pd.Series(), thresh = floating decimal values
-            Description: This Will check the correlation of features and will delete based on threshold.
+            Description: This Will check the correlation of features and will delete based on threshold for particular feature only.
             '''
             result = {}
             final_result = []
@@ -187,6 +187,41 @@ try:
                         if(fr[keyss]>thresh and keyss!=features):
                             empty.add(keyss)
                 dataframe.drop(empty, axis = 1, inplace = True)
+                return dataframe
+                
+            else:
+                print(f'{Fore.RED}Please Check All The Parameters And Try Again.')
+        
+    def Find_corr_drop_all(dataframe,thresh,feature = ''):
+            '''
+            Input: pd.DataFrame(), features, thresh, 
+            Output: updated pd.dataframe()
+            Params:pd.DataFrame(), feautres = pd.Series(), thresh = floating decimal values , 
+            Description: This Will check the correlation of features and will delete based on threshold for all.
+            thresh = accepts percentage values in decimal
+            sign = accpets +ve , -ve string values.
+            dataframe = pandas dataframe pd.DataFrame()
+            This will return all columns for certain defined +ve or -ve cor-relation.    '''   
+
+            if feature!='':
+                temp_df = dataframe[feature]
+                corr_matrix = dataframe.corr().abs()
+                # Select upper triangle of correlation matrix
+                upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
+                # Find features with correlation greater than 0.95
+                to_drop = [column for column in upper.columns if any(upper[column] > thresh)]
+                # Drop features 
+                dataframe.drop(to_drop, axis=1, inplace=True)
+                dataframe[feature] = temp_df
+                return dataframe
+            elif feature=="":
+                corr_matrix = dataframe.corr().abs()
+                # Select upper triangle of correlation matrix
+                upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
+                # Find features with correlation greater than 0.95
+                to_drop = [column for column in upper.columns if any(upper[column] > thresh)]
+                # Drop features 
+                dataframe.drop(to_drop, axis=1, inplace=True)
                 return dataframe
                 
             else:
@@ -770,6 +805,44 @@ try:
                 mode = dataframe[columns[i]].mode().tolist()[0] #if for some reason there comes two different values in mode
                 dataframe[columns[i]] = dataframe[columns[i]].fillna(mode)        
             return dataframe
+        
+    class Encoder:
+        """
+        Class For Encoders More encoding techniques will be there in the next update this is updated in version 0.0.4;
+        """
+        
+        def mean_target(self,dataframe,feature,target, on_new_col = 'no'):
+            '''
+            Input: pd.DataFrame(),feature,target,on_new_col
+            Output: pd.DataFrame(),_groups
+            Description: Will encode values of categorical feature in datafarme with mean target ordinal encding technique .
+            
+            '''
+            _groups = pd.DataFrame() 
+            self.dataframe = dataframe
+            self.feature = feature
+            self.target = target
+            self.on_new_col = on_new_col
+            self._groups = _groups
+            string = ''
+            error = 'Please Check your parameters again or check documentation if you are not clear about the use.'
+            
+            if on_new_col == 'yes' and type(feature) == type(string):
+                mean_ordinal = dataframe.groupby([feature])[target].mean().to_dict()
+                _groups[feature] = dataframe[feature]
+                dataframe['Mean_Ordinal_Encode'] = dataframe[feature].map(mean_ordinal)
+                _groups['Encoded Values']  = dataframe['Mean_Ordinal_Encode']
+                dataframe[feature] = dataframe['Mean_Ordinal_Encode']
+                
+                return dataframe
+            elif on_new_col == 'no' and type(feature) == type(string):
+                _groups[feature] = dataframe[feature]
+                mean_ordinal = dataframe.groupby([feature])[target].mean().to_dict()
+                _groups[feature] = df[feature].map(mean_ordinal)
+                dataframe[feature] = _groups[feature]
+                return dataframe
+            else:
+                return error
         
         
 except Exception as e:
