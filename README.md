@@ -5,6 +5,7 @@ Please update your library to the latest version to use it properly v datawrang 
 Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
 <!-- Place this tag where you want the button to render. -->
 <!-- Place this tag in your head or just before your close body tag. -->
+
 # Getting Started Documentaiton
 
 For Installation:
@@ -59,12 +60,34 @@ Capture_NaN(df,feature = '')
 #.
 #.
 #.
-# A full documentation will be coming soon. Thank you.
+# A full documentation is out please have a look https://tusharnautiyal-web.github.io/DataWrang-Library. Thank you.
 ```
-## Updates 
+## Updates 0.0.4
+1. Documentation is updated for the newer version with all new features and usecase mentioned.
+
+'''python
+
+dw.Find_corr_drop_all(dataframe,thresh,feature = '')
+#It takes data frame as input with threshold value as thresh in floating format like 90% = 0.9 and will remove all features that are co-related above 90 percent.
+
+encoder = dw.Encoder()
+encoder.mean_target(self,dataframe,feature,target, on_new_col = 'no')
+
+'''
+## Documentation
+Python-code: Go to documentation folder for the code
+
+Main-code: Go to datawrang folder
+
+Website : https://tusharnautiyal-web.github.io/DataWrang-Library/
+
+Credit: Tushar Nautiyal
+
+Email: info@tusharnauityal.ml
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 ## Usage
 ```python
 import datawrang as dw
