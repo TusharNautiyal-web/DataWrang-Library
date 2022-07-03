@@ -2,8 +2,8 @@
 <h2 align = 'center'>A Library Empowering The Data Science Community</h2>
 <p align = 'center'>Author: Tushar Nautiyal</p>
 
-<div style  ='justify-content: center;'>
-<img src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+
+<img align = 'center' src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
 <img src = 'https://img.shields.io/badge/Older-0.0.3-Green.svg'/>
 </div>
 Please update your library to the latest version to use it properly v datawrang == 0.0.3 had bugs and its now fixed in v datawrang == 0.0.4
