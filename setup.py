@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name = 'DataWrang',
-    version= '0.0.4.1',
+    version= '0.0.4.2',
     description = 'Python Library For Data Science',
     author = 'Tushar Nautiyal',
     long_description= 'Python Library For Data Science for Data Cleaning, Pre Processing , Feature Enginnering and Feature Selection. It includes multiple functions to deal with multiple scenarios. ',
