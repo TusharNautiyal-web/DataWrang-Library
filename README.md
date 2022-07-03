@@ -3,8 +3,8 @@
 <p align = 'center'>Author: Tushar Nautiyal</p>
 
 
-<img align = 'center' src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img align = 'center' src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
-<img align = 'center' src = 'https://img.shields.io/badge/Older-0.0.3-Green.svg'/>
+<div style = 'width: 100px;'><div><img  src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img  src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+<img src = 'https://img.shields.io/badge/Older-0.0.3-Green.svg'/>
 ## Important
 Please update your library to the latest version to use it properly v datawrang == 0.0.3 had bugs and its now fixed in v datawrang == 0.0.4
 Data Wrang Library is created For Python for dealing with problems of Feature Engineering and Feature Scaling and handling missing values and other preprocessing and data cleaning problems.
