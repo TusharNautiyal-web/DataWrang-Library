@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: DataWrang
+Version: 0.0.4.1
+Summary: Python Library For Data Science
+Home-page: UNKNOWN
+Author: Tushar Nautiyal
+Author-email: info@tusharnautiyal.ml
+License: MIT
+Keywords: Data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+License-File: LICENSE.txt
+
+Python Library For Data Science for Data Cleaning, Pre Processing , Feature Enginnering and Feature Selection. It includes multiple functions to deal with multiple scenarios. 
+

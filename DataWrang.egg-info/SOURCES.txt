@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+DataWrang.egg-info/PKG-INFO
+DataWrang.egg-info/SOURCES.txt
+DataWrang.egg-info/dependency_links.txt
+DataWrang.egg-info/requires.txt
+DataWrang.egg-info/top_level.txt
+datawrang/datawrang.py
+documentation/documentation.py
