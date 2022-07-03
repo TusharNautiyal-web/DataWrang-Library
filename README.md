@@ -104,7 +104,16 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ```python
 import datawrang as dw
 dw.Find_corr(dataframe,feature)
+
 # import datawrang and then you can use all the functions and classes avalible in the package.
+# To acess classes for example Impute
+
+impute = dw.Impute()
+dw.impute.nan_mode_all(dataframe = df)
+
+or 
+
+dw.encoder.
 ```
 For detailed classes and functions visit Documentation. (coming soon)
 
