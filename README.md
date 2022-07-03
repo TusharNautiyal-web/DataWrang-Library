@@ -22,7 +22,7 @@ Data Wrang Library is created For Python for dealing with problems of Feature En
 
 For Installation:
 ```
-pip install DataWrang
+pip install datawrang
 ```
 ***For Detailed DataWrang <a href = 'https://tusharnautiyal-web.github.io/DataWrang-Library/'>Documentation</a>***
 
