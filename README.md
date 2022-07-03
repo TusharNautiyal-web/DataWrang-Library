@@ -1,6 +1,8 @@
-<h1 align = 'center' style = 'text-align: center;'>Welcome To Data Wrang 0.0.4</h1> 
-<h2 align = 'center' style = 'text-align: center;'>A Library Empowering The Data Science Community</h2>
+<h1 align = 'center' >Welcome To Data Wrang 0.0.4</h1> 
+<h2 align = 'center'>A Library Empowering The Data Science Community</h2>
+
 ***Author: Tushar Nautiyal***
+
 <img src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
 <img src = 'https://img.shields.io/badge/Older-0.0.3-Green.svg'/>
 
