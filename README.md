@@ -3,7 +3,7 @@
 <p align = 'center'>Author: Tushar Nautiyal</p>
 
 <p align="center">
-<img  src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img  src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+<img  src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img  src = 'https://img.shields.io/badge/Latest-0.0.4.2-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
 <img src = 'https://img.shields.io/badge/Older-0.0.3-Green.svg'/>
 </p>
 ## Important
