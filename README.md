@@ -1,10 +1,17 @@
 # IMPORTANT:
-<img src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img src = 'https://img.shields.io/badge/Latest-0.0.3-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+<img src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img src = 'https://img.shields.io/badge/Latest-0.0.4-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+<img src = 'https://img.shields.io/badge/Older-0.0.3-Green.svg'/>
 
-Please update your library to the latest version to use it properly v datawrang == 0.0.1 had bugs and its now fixed in v datawrang == 0.0.3
-Data Wrang Library is created For Python for dealing with problems of feature engineering and feature scaling and handling missing values.
+Please update your library to the latest version to use it properly v datawrang == 0.0.3 had bugs and its now fixed in v datawrang == 0.0.4
+Data Wrang Library is created For Python for dealing with problems of Feature Engineering and Feature Scaling and handling missing values and other preprocessing and data cleaning problems.
 <!-- Place this tag where you want the button to render. -->
 <!-- Place this tag in your head or just before your close body tag. -->
+
+# New Feature Coming Soon
+1. Update 0.0.5 will be rolling out soon.
+2. Update 0.0.5 will be having more encoding method like probablity encoder, binning features and much more.
+3. A new way to detect which method of null value imputation you should use for your feature.
+4. Update 0.0.6 will be having a feature for faster reads and write of big files.
 
 # Getting Started Documentaiton
 
