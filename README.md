@@ -31,6 +31,7 @@ pip install datawrang
 ***For Detailed DataWrang <a href = 'https://tusharnautiyal-web.github.io/DataWrang-Library/'>Documentation</a>***
 
 ***python.org link<a href = 'https://pypi.org/project/DataWrang/'/>DataWrang - PyPI</a>***
+
 ```python
 import datawrang as dw
 # There are many functions a detailed readme will be avalible soon.
@@ -83,7 +84,7 @@ dw.Capture_NaN(df,feature = '')
 ## Updates 0.0.4
 1. Documentation is updated for the newer version with all new features and usecase mentioned.
 
-'''python
+```python
 
 dw.Find_corr_drop_all(dataframe,thresh,feature = '')
 #It takes data frame as input with threshold value as thresh in floating format like 90% = 0.9 and will remove all features that are co-related above 90 percent.
@@ -91,7 +92,7 @@ dw.Find_corr_drop_all(dataframe,thresh,feature = '')
 encoder = dw.Encoder()
 encoder.mean_target(self,dataframe,feature,target, on_new_col = 'no')
 
-'''
+```
 ## Documentation
 Python-code: Go to documentation folder for the code
 
