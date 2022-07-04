@@ -1,5 +1,5 @@
 <p align = 'center'>
-<img src = 'https://user-images.githubusercontent.com/74553737/177100359-8a830397-2053-4eb1-9d1b-de9ef61a24df.png' width = '100px' height = '50px'  >
+<img src = 'https://user-images.githubusercontent.com/74553737/177100359-8a830397-2053-4eb1-9d1b-de9ef61a24df.png' width = '200px' height = '100px'  >
 </p>
 <h1 align = 'center' >Welcome To Data Wrang 0.0.4</h1> 
 <h2 align = 'center'>A Library Empowering The Data Science Community</h2>
