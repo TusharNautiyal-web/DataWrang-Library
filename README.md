@@ -1,3 +1,5 @@
+<img src = 'https://user-images.githubusercontent.com/74553737/177099988-38784041-3ae8-46ad-a6e8-1667d2743a63.png' align = 'center'/>
+
 <h1 align = 'center' >Welcome To Data Wrang 0.0.4</h1> 
 <h2 align = 'center'>A Library Empowering The Data Science Community</h2>
 <p align = 'center'>Author: Tushar Nautiyal</p>
@@ -28,7 +30,7 @@ pip install datawrang
 
 ***python.org link<a href = 'https://pypi.org/project/DataWrang/'/>DataWrang - PyPI</a>***
 ```python
-import datawrang
+import datawrang as dw
 # There are many functions a detailed readme will be avalible soon.
 
 Find_Categorical_dtype_num(df)
@@ -37,13 +39,13 @@ Find_Categorical_dtype_num(df)
 
 
          
-Find_Categorical_return_df(df) 
+dw.Find_Categorical_return_df(df) 
 #return dataframe with categorical variables works for numerical value also.
 
 
 # For Correlation
 
-Find_corr(dataframe,features,thresh = 12120,sign = ''):
+dw.Find_corr(dataframe = df,features = '',thresh = 0.1 ,sign = ''):
             #thresh = accepts percentage values in decimal
             #sign = accpets +ve , -ve string values.
             #dataframe = pandas dataframe pd.DataFrame()
@@ -52,12 +54,14 @@ Find_corr(dataframe,features,thresh = 12120,sign = ''):
 
 Find_corr_drop(dataframe,features,thresh)
 # This Will Delete all the correlation column for certain threshold
+# Do understand this is not a drop_all function but a drop function base on feature you passed that means it will drop corr-related columns based on feature given
+# For more explanation check the coming up video for use of datawrang.
 
 # ForRandomSampleimputation 
 
 # Create a impute object and then use it to call the function. There are also other functions like frequenct_category, end_distribution, which will be covered in full documentation.
 
-impute = Impute()
+impute = dw.Impute()
 impute.rand_sample(dataframe,feature = "") 
 
 #or
@@ -67,7 +71,7 @@ impute.rand_sample_cat(dataframe,feature = "")
 
 
 # capture_NAN in new columns feature can be list or feature can be a single string. 
-Capture_NaN(df,feature = '')
+dw.Capture_NaN(df,feature = '')
 #.
 #.
 #.
