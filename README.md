@@ -1,6 +1,7 @@
 <p align = 'center'>
-<img src = 'https://user-images.githubusercontent.com/74553737/177100359-8a830397-2053-4eb1-9d1b-de9ef61a24df.png' width = '200px' height = '100px'  >
+<img src = 'https://user-images.githubusercontent.com/74553737/177100736-64354d6d-00f3-4c54-9235-08f2d4c7a06b.png' width = '200px' height = '100px'/>
 </p>
+
 <h1 align = 'center' >Welcome To Data Wrang 0.0.4</h1> 
 <h2 align = 'center'>A Library Empowering The Data Science Community</h2>
 <p align = 'center'>Author: Tushar Nautiyal</p>
