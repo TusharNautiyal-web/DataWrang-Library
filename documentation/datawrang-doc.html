@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- saved from url=(0037)http://localhost:60196/Datawrang.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pydoc: module Datawrang</title>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pydoc: module Datawrang</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="./style/style.css"></head><body bgcolor="#f0f0f8">
@@ -10,13 +11,13 @@
 <table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
 <tbody><tr bgcolor="white">
 <td valign="bottom">&nbsp;<br>
-<font  face="helvetica, arial">&nbsp;<br><big><big><strong><h1 style="text-align: center; color: black;"><i class="fa-brands fa-python"></i>DataWrang 0.0.3</h1></strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"></font></td></tr></tbody></table>
+<font  face="helvetica, arial">&nbsp;<br><big><big><strong><h1 style="text-align: center; color: rgb(22, 22, 22);"><i class="fa-brands fa-python"></i>DataWrang 0.0.4.2</h1></strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"></font></td></tr></tbody></table>
     <p></p>
-    <div style="text-align: center;">
-      <p><a href="https://pypi.org/project/DataWrang/" style="color: black">pip install DataWrang</a></p>
+    <div style="text-align: center; display: grid; place-items: center; place-content: center; height: 50px;">
+      <p style="padding-top: 10px; background-color: rgb(44, 44, 44); width: 200px; height: 50px; "><a href="https://pypi.org/project/DataWrang/" style="font-style: italic; color: white; ">pip install datawrang</a></p>
     </div>
     <div style="text-align: center;">
-      <p>Created By Tushar Nautiyal 2022 | Latest Version = 0.0.3 - alpha | Upcoming Latest Version = 0.0.4 Update on 28 July 2022</p>
+      <p>Created By Tushar Nautiyal 2022 | Latest Version = 0.0.4.2 - alpha | Upcoming Latest Version = 0.0.5</p>
     </div>
 
 <font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
@@ -74,7 +75,7 @@ Data descriptors defined here:<br>
 <table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
 <tbody><tr bgcolor="#ffc8d8">
 <td colspan="3" valign="bottom">&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="Impute">class <strong>Impute</strong></a>(builtins.object)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="Impute">class <strong>Impute</strong></a></font></td></tr>
     
 <tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
@@ -140,9 +141,35 @@ Data descriptors defined here:<br>
 <dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
 </td></tr></tbody></table></p></td></tr></tbody></table></p><p>
+  <table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+   
+    <table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+    <tbody><tr bgcolor="#ffc8d8">
+    <td colspan="3" valign="bottom">&nbsp;
+      <p>After Update 0.0.4.0</p>   
+
+    <font color="#000000" face="helvetica, arial"><a name="Dropnan">class <strong>Encoder</strong></a></font></td></tr>
+    <tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+    <td colspan="2"><tt>Encode&nbsp;Features&nbsp;or Columns&nbsp;Using&nbsp;different encoding techniques.<br>
+    Initalized&nbsp;as&nbsp;<br>
+    import&nbsp;datawrang&nbsp;as&nbsp;dw<br>
+    encoder&nbsp;=&nbsp;dw.Encoder()<br>
+    encoder.mean_target(dataframe,feature,target,on_new_col = 'no')<br>&nbsp;</tt></td></tr>
+    <tr><td>&nbsp;</td>
+    <td width="100%">Methods defined here:<br>
+     <tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+       <td width="100%"><dl><dt><a name="-Capture_NaN"><strong>mean_target</strong></a>(dataframe, feature, target, on_new_col = 'no')</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
+       Output:&nbsp;pd.DataFrame(), _groups<br>
+       Other Values: You can check how values are encoded using Encode._group
+       Params:&nbsp;dataframe&nbsp;=&nbsp;,feature&nbsp;=&nbsp;,target&nbsp;=&nbsp;,on_new_col&nbsp;=&nbsp;<br>
+       Prerequisite:&nbsp;dataframe&nbsp;parameter&nbsp;cannot&nbsp;stay&nbsp;empty. feature is your feature that will be considered for mean and target is your dependent variable<br>
+       Description:&nbsp;mean_target&nbsp;will&nbsp;perform&nbsp;mean target encoding&nbsp;on&nbsp;feature&nbsp;values&nbsp;depending&nbsp;on mean of target you can check how encoding happens by (_groups) which shows your feature and its encode values in a dataframe. If you do not want to change the values of you feature directly you can select on_new_col = 'yes' all in short to not perform the operation on that feature and seprately will &nbsp;store&nbsp;it&nbsp;in&nbsp;a&nbsp;new&nbsp;feature&nbsp;naming&nbsp;:&nbsp;['mean_target_encoded']</tt></dd></dl>
+        
+       </td></tr></tbody></table></p><p>
 <table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
 <tbody><tr bgcolor="#eeaa77">
 <td colspan="3" valign="bottom">&nbsp;<br>
+
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
@@ -171,11 +198,9 @@ Output:&nbsp;pd.DataFrame()&nbsp;#&nbsp;with&nbsp;Categroical&nbsp;Variables.<br
 This&nbsp;will&nbsp;return&nbsp;all&nbsp;categorical&nbsp;vairables&nbsp;and&nbsp;converts&nbsp;into&nbsp;data&nbsp;frame.<br>
 It&nbsp;should&nbsp;only&nbsp;be&nbsp;used&nbsp;for&nbsp;bigger&nbsp;datasets&nbsp;and&nbsp;should&nbsp;not&nbsp;be&nbsp;used&nbsp;for&nbsp;smaller&nbsp;datasets.</tt></dd></dl>
  <dl><dt><a name="-Find_Missing_col"><strong>Find_Missing_col</strong></a>(dataframe)</dt><dd><tt>Lets&nbsp;Find&nbsp;Out&nbsp;Only&nbsp;Missing&nbsp;Values&nbsp;in&nbsp;respect&nbsp;to&nbsp;Percentage.<br>
-Input:<br>
-Output:<br>
-Params:<br>
-Prerequisite:<br>
-Description:</tt></dd></dl>
+Input:pd.DataFrame()<br>
+Output:pd.DataFrame()<br>
+Description:It will Find All Missing Features Column names from the dataframe given and will print it</tt></dd></dl>
  <dl><dt><a name="-Find_Missing_percentage"><strong>Find_Missing_percentage</strong></a>(dataframe)</dt><dd><tt>Input:&nbsp;pd.DataFrame()<br>
 Output:&nbsp;features:&nbsp;-&gt;&nbsp;Missing&nbsp;Value&nbsp;Percentage<br>
 Params:&nbsp;pd.DataFrame()<br>
@@ -188,10 +213,17 @@ thresh&nbsp;=&nbsp;accepts&nbsp;percentage&nbsp;values&nbsp;in&nbsp;decimal<br>
 sign&nbsp;=&nbsp;accpets&nbsp;+ve&nbsp;,&nbsp;-ve&nbsp;string&nbsp;values.<br>
 dataframe&nbsp;=&nbsp;pandas&nbsp;dataframe&nbsp;pd.DataFrame()<br>
 This&nbsp;will&nbsp;return&nbsp;all&nbsp;columns&nbsp;for&nbsp;certain&nbsp;defined&nbsp;+ve&nbsp;or&nbsp;-ve&nbsp;cor-relation.</tt></dd></dl>
+<p>After update 0.0.4.0 only</p>
+
  <dl><dt><a name="-Find_corr_drop"><strong>Find_corr_drop</strong></a>(dataframe, features, thresh)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;features,&nbsp;thresh<br>
 Output:&nbsp;updated&nbsp;pd.dataframe()<br>
 Params:pd.DataFrame(),&nbsp;feautres&nbsp;=&nbsp;pd.Series(),&nbsp;thresh&nbsp;=&nbsp;floating&nbsp;decimal&nbsp;values<br>
 Description:&nbsp;This&nbsp;Will&nbsp;check&nbsp;the&nbsp;correlation&nbsp;of&nbsp;features&nbsp;and&nbsp;will&nbsp;delete&nbsp;based&nbsp;on&nbsp;threshold.</tt></dd></dl>
+<dl><dt><a name="-Find_corr_drop"><strong>Find_corr_drop_all</strong></a>(dataframe, feature, thresh)</dt><dd><tt>Input:&nbsp;pd.DataFrame(),&nbsp;features,&nbsp;thresh<br>
+  Output:&nbsp;updated&nbsp;pd.dataframe()<br>
+  Params:pd.DataFrame(),&nbsp;feautres&nbsp;=&nbsp;pd.Series(),&nbsp;thresh&nbsp;=&nbsp;floating&nbsp;decimal&nbsp;values<br>
+  Description:&nbsp;This&nbsp;Will&nbsp;check&nbsp;the&nbsp;correlation&nbsp;of&nbsp;all features with one another&nbsp;and&nbsp;will&nbsp;delete&nbsp;based&nbsp;on&nbsp;threshold.</tt></dd></dl>
 </td></tr></tbody></table></p><p>
-<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+
+  
 </body></html>
