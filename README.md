@@ -23,6 +23,8 @@ Data Wrang Library is created For Python for dealing with problems of Feature En
 2. Update 0.0.5 will be having more encoding method like probablity encoder, binning features and much more.
 3. A new way to detect which method of null value imputation you should use for your feature.
 4. Update 0.0.6 will be having a feature for faster reads and write of big files.
+5. New Update 0.0.5 will be having NLP stop words support for all indian laguages and western languages.
+6. New update 0.0.5 will have auto ml functionality. 
 
 # Getting Started Documentaiton
 
@@ -38,7 +40,7 @@ pip install datawrang
 import datawrang as dw
 # There are many functions a detailed readme will be avalible soon.
 
-Find_Categorical_dtype_num(df)
+dw.Find_Categorical_dtype_num(df)
 # This will return numerical dtype categorical vairables from data frame.
 # It should only be used for bigger datasets and should not be used for smaller datasets.        
 
@@ -57,7 +59,7 @@ dw.Find_corr(dataframe = df,features = '',thresh = 0.1 ,sign = ''):
         # This will return all columns for certain defined +ve or -ve cor-relation.    
 #This will find correlation based on +ve -ve sign and thresh please remember to use thresh hold with respect to signs or don't use sign if you are using threshold.
 
-Find_corr_drop(dataframe,features,thresh)
+dw.Find_corr_drop(dataframe,features,thresh)
 # This Will Delete all the correlation column for certain threshold
 # Do understand this is not a drop_all function but a drop function base on feature you passed that means it will drop corr-related columns based on feature given
 # For more explanation check the coming up video for use of datawrang.
