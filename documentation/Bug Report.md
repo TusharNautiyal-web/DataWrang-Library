@@ -1,31 +1,29 @@
-name	about	title	labels	assignees
+---
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: bug
+assignees: ''
 
-Bug report
+---
 
-Create a report to help us improve
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-bug
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-Describe the bug A clear and concise description of what the bug is.
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-To Reproduce Steps to reproduce the behavior:
+**Environment (please complete the following information):**
+ - OS: [e.g. Windows, Ubuntu, CentOS, MacOS]
+ - Python version: [e.g. Python 3.6.8 from Anaconda]
+ - Stanza version: [e.g., 1.0.0]
 
-Go to '...'
-
-Click on '....'
-
-Scroll down to '....'
-
-See error
-
-Expected behavior A clear and concise description of what you expected to happen.
-
-Environment (please complete the following information):
-
-OS: [e.g. Windows, Ubuntu, CentOS, MacOS]
-
-Python version: [e.g. Python 3.6.8 from Anaconda]
-
-Stanza version: [e.g., 1.0.0]
-
-Additional context Add any other context about the problem here.
+**Additional context**
+Add any other context about the problem here.
