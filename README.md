@@ -23,8 +23,12 @@ Data Wrang Library is created For Python for dealing with problems of Feature En
 2. Update 0.0.5 will be having more encoding method like probablity encoder, binning features and much more.
 3. A new way to detect which method of null value imputation you should use for your feature.
 4. Update 0.0.6 will be having a feature for faster reads and write of big files.
-5. New Update 0.0.5 will be having NLP stop words support for all indian laguages and western languages.
-6. New update 0.0.5 will have auto ml functionality. 
+5. New Update 0.0.6 will be having NLP stop words support for all indian laguages and western languages.
+6. New update 0.0.6 will have auto ml functionality. 
+7. New update 0.0.5 will have a suggest class for doing what was told in 3rd option rolling out on august 5 Thank you for supporting this library.
+8. New Update 0.0.5 will also have a new feature for getting precision fpr, tpr and specificity confirmed.
+9. New update 0.0.5 will be also going to get optimize_dataframe function to optimize your load speed so that need of chunksize for lower size dataset is reduced.
+10. Date Confirmed for rollout of 0.0.5 is August 5.
 
 # Getting Started Documentaiton
 
