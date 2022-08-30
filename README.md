@@ -19,7 +19,7 @@ Data Wrang Library is created For Python for dealing with problems of Feature En
 <!-- Place this tag in your head or just before your close body tag. -->
 
 # New Feature Coming Soon
-1. Datawrang library-repo is updated to version 0.0.5. Start contributing towards library to further modify
+1. Datawrang library-repo is updated to version 0.0.5. Start contributing towards library to further modify. Relase Date For The Update 0.0.5 is 5 sept.
 2. Datawrang 0.0.5 introduced pipelines for modular pipelining of you preprocessing stream, optimizers for increasing read and load and optimizing your dataframe for big data and at last more encoders and encoding technique with 1 feature or many together option.
 3. Issues Fixed: 
     1. Repository with better filing naming and modules.
