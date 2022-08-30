@@ -128,7 +128,6 @@ or
 
 encode = dw.encoder(df)
 encode.mean_target(feature = ['<feature-name>'],target = '<Your O/P or Target Feature Name>')
-```
 
 # This is after update 0.0.5
 
@@ -140,6 +139,9 @@ For detailed classes and functions visit Documentation.
 from datawrang.imputers import Imputer
 impute = Imputer()
 impute.nan_mean_all(df)
+```
+
+
 
 ## Code of Conduct
 Visit Code of counduct page to know about usage policies and code of conduct <a href = 'https://github.com/TusharNautiyal-web/DataWrang-Library/blob/main/CODE%20OF%20CONDUCT.md'>Click Here</a>.
