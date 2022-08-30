@@ -12,5 +12,14 @@ updated version
 updated version
 0.0.4.1 (3 July 2022)
 
+updated Version
+0.0.5.1 (30 August 2022):
+Introduced New Modules.
+encoders
+pipelines
+imputers
+optimizers
+suggestions
+
 ---------------------
 -First Release

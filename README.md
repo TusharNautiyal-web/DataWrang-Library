@@ -19,13 +19,15 @@ Data Wrang Library is created For Python for dealing with problems of Feature En
 <!-- Place this tag in your head or just before your close body tag. -->
 
 # New Feature Coming Soon
-1. Update 0.0.5 will be rolling out soon.
-2. Update 0.0.5 will be having more encoding method like probablity encoder, binning features and much more.
-3. A new way to detect which method of null value imputation you should use for your feature.
-4. Update 0.0.6 will be having a feature for faster reads and write of big files.
-5. New Update 0.0.5 will be having NLP stop words support for all indian laguages and western languages.
-6. New update 0.0.5 will have auto ml functionality. 
-
+1. Datawrang library-repo is updated to version 0.0.5. Start contributing towards library to further modify
+2. Datawrang 0.0.5 introduced pipelines for modular pipelining of you preprocessing stream, optimizers for increasing read and load and optimizing your dataframe for big data and at last more encoders and encoding technique with 1 feature or many together option.
+3. Issues Fixed: 
+    1. Repository with better filing naming and modules.
+    2. Attribute Error Issues Fixed Bug Removed.
+    3. Better Performance and increased processing times.
+    4. Docstrings introduced for each module and its functions.
+4. Future updates will include NLP stopwords support for 28+ languages in 0.0.6
+5. Also better optimization techniques, auto ml and Series encoder to encode series directly without dataframe.
 # Getting Started Documentaiton
 
 For Installation:
@@ -83,7 +85,7 @@ dw.Capture_NaN(df,feature = '')
 #.
 #.
 #.
-# A full documentation is out please have a look https://tusharnautiyal-web.github.io/DataWrang-Library. Thank you.
+# A full documentation is out please have a look https://datawrang.ml. Thank you.
 ```
 ## Updates 0.0.4
 1. Documentation is updated for the newer version with all new features and usecase mentioned.
@@ -124,9 +126,10 @@ dw.impute.nan_mode_all(dataframe = df)
 
 or 
 
-dw.encoder.
+encode = dw.encoder(df)
+encode.mean_target(feature = ['<feature-name>'],target = '<Your O/P or Target Feature Name>')
 ```
-For detailed classes and functions visit Documentation. (coming soon)
+For detailed classes and functions visit Documentation.
 
 ## Code of Conduct
 Visit Code of counduct page to know about usage policies and code of conduct <a href = 'https://github.com/TusharNautiyal-web/DataWrang-Library/blob/main/CODE%20OF%20CONDUCT.md'>Click Here</a>.
