@@ -134,14 +134,12 @@ encode.mean_target(feature = ['<feature-name>'],target = '<Your O/P or Target Fe
 from datawrang.encoders import Encoder
 encode = Encoder(dataframe = '<-Your Dataframe>')
 encode.mean_target(feature = ['<Your Feautres>'],target='Your O/P Feature')
-For detailed classes and functions visit Documentation.
 
 from datawrang.imputers import Imputer
 impute = Imputer()
 impute.nan_mean_all(df)
 ```
-
-
+For detailed classes and functions visit Documentation.
 
 ## Code of Conduct
 Visit Code of counduct page to know about usage policies and code of conduct <a href = 'https://github.com/TusharNautiyal-web/DataWrang-Library/blob/main/CODE%20OF%20CONDUCT.md'>Click Here</a>.
