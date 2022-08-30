@@ -120,7 +120,7 @@ dw.Find_corr(dataframe,feature)
 
 # import datawrang and then you can use all the functions and classes avalible in the package.
 # To acess classes for example Impute
-
+# This is before update 0.0.5
 impute = dw.Impute()
 dw.impute.nan_mode_all(dataframe = df)
 
@@ -129,7 +129,17 @@ or
 encode = dw.encoder(df)
 encode.mean_target(feature = ['<feature-name>'],target = '<Your O/P or Target Feature Name>')
 ```
+
+# This is after update 0.0.5
+
+from datawrang.encoders import Encoder
+encode = Encoder(dataframe = '<-Your Dataframe>')
+encode.mean_target(feature = ['<Your Feautres>'],target='Your O/P Feature')
 For detailed classes and functions visit Documentation.
+
+from datawrang.imputers import Imputer
+impute = Imputer()
+impute.nan_mean_all(df)
 
 ## Code of Conduct
 Visit Code of counduct page to know about usage policies and code of conduct <a href = 'https://github.com/TusharNautiyal-web/DataWrang-Library/blob/main/CODE%20OF%20CONDUCT.md'>Click Here</a>.
