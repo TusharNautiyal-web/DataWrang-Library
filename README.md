@@ -28,10 +28,10 @@ Data Wrang Library is created For Python for dealing with problems of Feature En
     4. Docstrings introduced for each module and its functions.
 4. Future updates will include NLP stopwords support for 28+ languages in 0.0.6
 5. Also better optimization techniques, auto ml and Series encoder to encode series directly without dataframe.
-6. 0.0.6 Will have feature to read entire folder and convert files with type Comma-separated values (CSV),XLSX,Plain Text (txt),JSON into different dataframes with options like optimization you can also use pipeline to directly do imputation or encoding for each one of them reducing time.
-7. 0.0.6 will have a files merger for csv, xslx, and conversion.
+6. 0.0.6 Will have feature to read entire folder and convert files with type Comma-separated values (CSV),XLSX,Plain Text (txt),JSON,SQL into different dataframes with options like optimization you can also use pipeline to directly do imputation or encoding for each one of them reducing time.
+7. 0.0.6 will have a files merger for csv, xslx, and others.
 
-SQL
+
 # Getting Started Documentaiton
 
 For Installation:
